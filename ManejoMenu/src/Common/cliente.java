@@ -6,6 +6,12 @@ public class cliente {
     private String Identificacion;
     private String Telefono;
 
+    public cliente(){
+        Nombre = "";
+        Apellido = "";
+        Identificacion = "";
+        Telefono = "";
+    }
 
     // metodo constructor
     public cliente(String name, String lastName, String id, String phone) {
@@ -32,7 +38,7 @@ public class cliente {
 
     }
 
-    public String getIdentificacio() {
+    public String getIdentificacion() {
         return Identificacion;
     }
 
@@ -48,7 +54,9 @@ public class cliente {
         Telefono = phone;
     }
 
-
+    public String getInformacion() {
+        return "Nombre: " + getNombre() + " Apellido: " + getApellido() + " Identificacion: " + getIdentificacion();
+    }
 
 
 
